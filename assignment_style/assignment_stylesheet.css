@@ -1,0 +1,68 @@
+/*Mipham Dhargay: 2022-02-02, the content in this file creates the style for the structure of the page as well as a navagation bar*/
+
+* {
+  box-sizing: border-box; 
+ }
+ body {
+   margin: 0;
+ }
+ #main {
+   display: flex;
+   min-height: calc(100vh - 40vh);
+ }
+ #main > article {
+   flex: 1;
+ }
+ #main > aside, 
+ #main > nav {
+   flex: 0 0 20vw;
+   background: beige;
+ }
+ #main > aside {
+   order: -1;
+ }
+ header, footer, article, nav, aside {
+   padding: 1em;
+ }
+ header, footer {
+   background: yellowgreen;
+   height: 20vh;
+ }
+ .header {
+ padding: 30px;
+ text-align: center;
+ background: white;
+ }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.imageicon {
+  width: 150px;
+  height: 150px;
+}
+

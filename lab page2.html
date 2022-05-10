@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fast and The Furious</title>
+<meta charset="utf-8">
+<meta name="author" content="Mipham Dhargay">
+<meta name="description" content="this page is about ">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%; 
+  background-color: #f1f1f1;
+  height: 800px; /* only for demonstration, should be removed alter the height to get more space*/
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<!--this will add the image fast_furious above the header-->
+<img src = "Mipham Dhargay - Images for Lab1/fast_furious.jpg" alt="Fast and Furious Cast Members">
+
+<header>
+  <h1>Fast and The Furious</h1>
+</header>
+
+<!--a list is created with images of the three main characters from the franchise the images are styled to fit the structure-->
+<section>
+  <nav>
+    <h1>Characters</h1>
+    <p>Click the images to go to their information</p>
+    <ul>
+      <h4>Brian O'Conner</h4>
+      <li><a href="#Paul"><img src = "Mipham Dhargay - Images for Lab1/paul_walker.jpg" alt="Paul Walker" style="width: 150px;height: 150px;"></a></li>
+      <h4>Dominic Toretto</h4>
+      <li><a href="#Dominic"><img src = "Mipham Dhargay - Images for Lab1/Vin_Diesel.jpg" alt="Vin Diesel"  style="width: 150px;height: 150px;"></a></li>
+      <h4>Luke Hobbs</h4>
+      <li><a href="#Dwyane"><img src = "Mipham Dhargay - Images for Lab1/the_rock.jpg" alt = "Dwyane Johnson"style="width: 150px;height: 150px;"></a></li>
+    </ul>
+  </nav>
+  
+  <!-- an overview of the plot and characters is provided and each character's header gets an id-->
+  <article>
+    <h1>Overview</h1>
+    <p>Fast & Furious is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and family. </p>
+    <h2 id=Paul>Brian O'Conner</h2>
+    <p>Brian O'Conner is a former officer in the Los Angeles Police Department and former agent in the Federal Bureau of Investigation. An officer sworn to uphold the law, he makes a full transition to the criminal life when he abandons the FBI to help Dominic Toretto, a street racer, avenge the death of his wife, Letty Ortiz and allows him to escape the law again, this time accompanying him.</p>
+    <h2 id=Dominic>Dominic Toretto</h2>
+    <p>Dominic is an elite street racer and auto mechanic. A man with a strong moral code and family values, Dominic began as a career criminal who robbed trucks to support his family. Banned from the professional circuit, Dominic relied on illegal quarter mile races to satisfy his passion for racing. When he meets Brian O'Conner, his family is torn apart by the revelation that Brian is an undercover cop. Dominic escapes the United States and reestablishes a new crew, running several jobs around Central and South America</p>
+    <h2 id=Dwyane>Luke Hobbs</h2>
+    <p>Lucas "Luke" Hobbs is a former agent of the Diplomatic Security Service. A protagonist in The Fast and the Furious franchise, Hobbs was once tasked to hunt down and capture wanted criminals Dominic Toretto and Brian O'Conner after they were framed for the death of three DEA agents in Rio de Janeiro but decided to join them in their heist.</p>
+
+    <!-- a table is created which holds information about each character and a hyperlink for the bookmark of the characters information-->
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+        <body>
+        
+        <h2>Character Information</h2>
+        
+        <table style="width:100%">
+          <tr>
+            <th>Character</th>
+            <th>Actor</th>
+            <th>Information</th>
+          </tr>
+          <tr>
+            <td>Brian O'Conner</td>
+            <td>Paul Walker</td>
+            <td><a href=#Paul>Information</a></td>
+          </tr>
+          <tr>
+            <td>Dominic Toretto</td>
+            <td>Vin Diesel</td>
+            <td><a href=#Dominic>Information</a></td>
+          </tr>
+          <tr>
+            <td>Luke Hobbs</td>
+            <td>Dwyane Johnson</td>
+            <td><a href=#Dwyane>Information</a></td>
+          </tr>
+        </table>
+        
+        
+
+</article>
+</section>
+<!-- this shows that each image is owned by Universal Pictures-->
+<footer>
+  <p>All images are copyright for Fast and Furious Franchise</p>
+  
+  <a href = https://cdn.onebauer.media/one/media/5ec5/1d47/1175/9f49/a3d6/3faa/fast-furious-main.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill>Fast and Furious Image</a>
+  <a href = https://static.wikia.nocookie.net/disney/images/a/a3/Vin_Diesel.jpg/revision/latest/top-crop/width/360/height/360?cb=20201031192856>Vin Diesel Image</a>
+  <a href = https://cdn.mos.cms.futurecdn.net/HqYrszVEEBbE9Yj4eVXQNn.jpg>Dwyane Johnson Image</a>
+  <a href = https://media1.popsugar-assets.com/files/thumbor/L4PizNt5_zpnE3mTiwQzCvVzmWA/1053x0:3000x1947/fit-in/550x550/filters:format_auto-!!-:strip_icc-!!-/2021/06/25/762/n/1922283/712a49fc60d60fa81a6051.90994882_/i/how-is-paul-walker-honored-in-f9-fast-saga.jpg>Paul Walker Photo</a>
+</footer>
+
+</body>
+</html>

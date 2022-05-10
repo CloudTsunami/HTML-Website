@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vin Diesel</title>
+<meta charset="utf-8">
+<meta name="author" content="Mipham Dhargay">
+<meta name="description" content="this page is about Vin Diesel">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Vin Diesel</h2>
+</header>
+
+<!--links to the information about fast and the furious characters are here in a list format-->
+<section>
+  <nav>
+    <ul>
+      <li><h1>Other Fast and Furious Stars</h1></li>
+      <li><a href="lab page2.html#Paul">Paul Walker</a></li>
+      <li><a href="lab page2.html#Dwyane">Dwyane Johnson</a></li>
+      <li><a href="https://m.imdb.com/name/nm0108287/?ref_=m_ttfcd_cl3">Jordana Brewster</a></li>
+    </ul>
+  </nav>
+  
+  <!--this section consists of headers and paragraphs about Vin Diesel's life-->
+  <article>
+    <h1>Career</h1>
+    <p>Diesel began his career in 1990 but struggled to gain roles until he wrote, directed, produced, and starred in the short film <a href =https://en.wikipedia.org/wiki/Multi-Facial>Multi-Facial (1995). </a> This attracted the attention of Steven Spielberg, who was developing <a href=https://en.wikipedia.org/wiki/Saving_Private_Ryan>Saving Private Ryan (1998)</a>, and re-wrote elements of the film to allow Diesel to appear in a supporting role. Diesel subsequently voiced the titular character in <a href =https://en.wikipedia.org/wiki/The_Iron_Giant>The Iron Giant (1999)</a> while gaining a reputation as an action star after headlining the <a href = "lab page2.html">Fast & Furious Franchise.</a></p> <!-- put the bookmark link to the fast and furious page-->
+    <h2>Fast And The Furious</h2>
+    <p>Dominic "Dom" Toretto is a fictional character and one of the main protagonists of the Fast & Furious franchise. He is portrayed by Vin Diesel and first appeared on film in the first movie.</p>
+  </article>
+</section>
+
+<!--when the image is clicked it redirects to the bookmark for Vin Diesels information in the 2nd page-->
+<footer>
+    <p>Learn More About Vin Diesel By Clicking This Image</p>
+    <a href = "lab page2.html#Dominc"><img src = "Mipham Dhargay - Images for Lab1/Vin_Diesel.jpg" alt="Vin Diesel Smiling"></a> <!-- change the picture to from not same folder-->
+    <a href = https://static.wikia.nocookie.net/disney/images/a/a3/Vin_Diesel.jpg/revision/latest/top-crop/width/360/height/360?cb=20201031192856>This image is owned by Universal Studios</a>
+  </footer>
+
+</body>
+</html>
